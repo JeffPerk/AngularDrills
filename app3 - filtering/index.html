@@ -1,9 +1,20 @@
-<html>
-	<body>
-		Something
+<html ng-app="thirdApp">
+	<body ng-controller="mainCtrl">
+
+		<input type="text" placeholder="Filter Name" ng-model="searchTerm.name">
+		<input type="text" placeholder="Filter Email" ng-model="searchTerm.email">
+
+		<div ng-repeat="item in items | filter: searchTerm">
+			{{item.name}}  ---{{item.email}}
+		</div>
+
+
+
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
 	</body>
 </html>
+
+<!--7min 21sec-->

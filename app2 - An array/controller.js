@@ -1,3 +1,3 @@
-angular.module('secondApp').controller('mainCtrl', function($scope, theService) {
-  $scope.data = theService.getData();
+angular.module('secondApp').controller('mainCtrl', function($scope, arrayService) {
+  $scope.items = arrayService.getData();
 })

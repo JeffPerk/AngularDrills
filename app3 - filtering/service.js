@@ -1,4 +1,4 @@
-angular.module('thirdApp').service('theService', function() {
+angular.module('thirdApp').service('arrayService', function() {
 
 
 var myData = [
@@ -107,5 +107,6 @@ var myData = [
 	this.getData = function() {
 		return myData;
 	}
+
 
 });

@@ -1,11 +1,11 @@
 <html ng-app="thirdApp">
 	<body ng-controller="mainCtrl">
 
-		<input type="text" placeholder="Filter Name" ng-model="searchTerm.name">
-		<input type="text" placeholder="Filter Email" ng-model="searchTerm.email">
+		<input type="text" placeholder="name" ng-model="searchTerm.name">
+		<input type="text" placeholder="email" ng-model="searchTerm.email">
 
 		<div ng-repeat="item in items | filter: searchTerm">
-			{{item.name}}  ---{{item.email}}
+			{{item.name}}    ---{{item.email}}
 		</div>
 
 
@@ -16,5 +16,4 @@
 		<script src="service.js"></script>
 	</body>
 </html>
-
-<!--7min 21sec-->
+<!--4min 34sec-->

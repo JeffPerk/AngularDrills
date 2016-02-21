@@ -1,5 +1,4 @@
-angular.module('secondApp').service('theService', function() {
-
+angular.module('secondApp').service('arrayService', function() {
 var myData = [
 	{"name": "Aileen Jacobs", "email": "convallis.ante.lectus@euneque.co.uk", "dateEmployed": "01/01/2016", "phone": "1-862-996-4921"},
 	{"name": "Karen Delgado", "email": "dapibus@Morbiquis.ca", "dateEmployed": "10/03/2014", "phone": "403-8410"},
@@ -106,6 +105,5 @@ var myData = [
 	this.getData = function() {
 		return myData;
 	}
-
 
 });

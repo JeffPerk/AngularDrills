@@ -1,5 +1,4 @@
-angular.module('thirdApp').service('arrayService', function() {
-
+angular.module('thirdApp').service('arrayServ', function() {
 
 var myData = [
 	{"name": "Aileen Jacobs", "email": "convallis.ante.lectus@euneque.co.uk", "dateEmployed": "01/01/2016", "phone": "1-862-996-4921"},

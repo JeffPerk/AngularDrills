@@ -1,19 +1,13 @@
 angular.module('fourthApp').service('apiServ', function($q, $http) {
   var baseUrl = 'http://pokeapi.co/api/v2/';
 
-  this.getPoke = function() {
-    var deferred = $q.defer();
+  this.getPokemon = function() {
 
-    $http({
+    return $http({
       method: 'GET',
-      url: baseUrl + 'pokemon/mew'
+      url: baseUrl + 'pokemon/pikachu'
     }).then(function(response) {
-      deferred.resolve(response.data)
+      return response.data;
     })
-
-    return deferred.promise;
   }
-
-
-
 })
